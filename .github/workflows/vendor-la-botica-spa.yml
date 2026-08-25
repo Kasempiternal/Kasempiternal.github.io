@@ -11,35 +11,57 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Vendor SPA JS, HTML, and photos
+      - name: Assemble SPA JS from patched gzip parts
         run: |
           set -euo pipefail
-          mkdir -p mukan-previews/la-botica/assets mukan-previews/la-botica/photos
-          curl -fsSL https://temporary-racing-crystal-tlmw9qx.vercel.app/assets/index-DGrpCQ0z.js \
-            | python3 -c 'import sys; t=sys.stdin.read(); sys.stdout.write(t.replace("src:`/photos/","src:`./photos/"))' \
-            > mukan-previews/la-botica/assets/index-DGrpCQ0z.js
-          test "$(git hash-object mukan-previews/la-botica/assets/index-DGrpCQ0z.js)" = "04269b034c887aff13be888d93edc134ade3bcf2"
-          for f in fachada-noche.jpg salon.jpg barra.jpg tapas.jpg extra.jpg fachada.jpg terraza-noche.jpg; do
-            curl -fsSL "https://temporary-racing-crystal-tlmw9qx.vercel.app/photos/$f" -o "mukan-previews/la-botica/photos/$f"
-          done
-          cat > mukan-previews/la-botica/index.html << 'HTML'
-          <!DOCTYPE html>
-          <html lang="es-ES">
-            <head>
-              <meta charset="UTF-8" />
-              <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-              <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-              <meta name="robots" content="noindex, nofollow" />
-              <title>Bar La Botica · Tapas en Córdoba</title>
-              <script type="module" crossorigin src="./assets/index-DGrpCQ0z.js"></script>
-              <link rel="stylesheet" crossorigin href="./assets/index-dsz1Rl1r.css">
-            </head>
-            <body>
-              <div id="root"></div>
-            </body>
-          </html>
-          HTML
+          python3 << 'PY'
+          import base64, gzip, subprocess
+          from pathlib import Path
+          root = Path("mukan-previews/la-botica/assets/_gz")
+          parts = []
+          for i in range(8):
+              t = (root / f"p{i}.b64").read_text()
+              if i == 0:
+                  t = t[:7914] + "o" + t[7914:]
+              elif i == 1:
+                  t = t[:11205] + "R" + t[11206:]
+              elif i == 2:
+                  t = list(t); t[3726] = "v"; t[6841] = "9"; t[7701] = "Z"; t = "".join(t)
+              elif i == 5:
+                  t = t[:6657] + "y" + t[6658:]
+                  t = t[:6825] + "o" + t[6825:]
+              elif i == 6:
+                  t = list(t); t[4838] = "v"; t[5687] = "r"; t[9168] = "h"; t[9171] = "S"; t[9579] = "7"; t = "".join(t)
+              elif i == 7:
+                  t = t[:2451] + "6" + t[2452:]
+              parts.append(t.strip())
+          js = gzip.decompress(base64.b64decode("".join(parts)))
+          out = Path("mukan-previews/la-botica/assets/index-DGrpCQ0z.js")
+          out.write_bytes(js)
+          sha = subprocess.check_output(["git", "hash-object", str(out)], text=True).strip()
+          assert sha == "04269b034c887aff13be888d93edc134ade3bcf2", sha
+          print("JS ok", sha, len(js))
+          Path("mukan-previews/la-botica/index.html").write_text(
+              "<!DOCTYPE html>\n"
+              "<html lang=\"es-ES\">\n"
+              "  <head>\n"
+              "    <meta charset=\"UTF-8\" />\n"
+              "    <link rel=\"icon\" type=\"image/svg+xml\" href=\"./favicon.svg\" />\n"
+              "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n"
+              "    <meta name=\"robots\" content=\"noindex, nofollow\" />\n"
+              "    <title>Bar La Botica · Tapas en Córdoba</title>\n"
+              "    <script type=\"module\" crossorigin src=\"./assets/index-DGrpCQ0z.js\"></script>\n"
+              "    <link rel=\"stylesheet\" crossorigin href=\"./assets/index-dsz1Rl1r.css\">\n"
+              "  </head>\n"
+              "  <body>\n"
+              "    <div id=\"root\"></div>\n"
+              "  </body>\n"
+              "</html>\n",
+              encoding="utf-8",
+          )
+          PY
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add mukan-previews/la-botica/assets/index-DGrpCQ0z.js mukan-previews/la-botica/index.html mukan-previews/la-botica/photos
-          if git diff --cached --quiet; then echo no changes; else git commit -m "Vendor Bar La Botica Córdoba SPA JS, HTML, and photos"; git push; fi
+          git add mukan-previews/la-botica/assets/index-DGrpCQ0z.js mukan-previews/la-botica/index.html
+          git commit -m "Vendor Bar La Botica Córdoba SPA JS assembled from gzip parts"
+          git push
