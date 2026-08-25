@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es-ES">
   <head>
     <meta charset="UTF-8" />
@@ -16,10 +16,217 @@
       rel="stylesheet"
     />
     <title>Bar La Botica · Tapas en Córdoba</title>
-    <script type="module" crossorigin src="./assets/index-DGrpCQ0z.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-dsz1Rl1r.css">
+    <link rel="stylesheet" href="./assets/index-dsz1Rl1r.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <div class="min-h-svh bg-ink">
+      <header class="fixed inset-x-0 top-0 z-50 mix-blend-normal">
+        <div class="flex items-center justify-between gap-4 px-4 py-3 md:px-8 bg-ink/80 backdrop-blur-md border-b border-cream/10">
+          <a href="#inicio" class="flex items-center gap-2 text-brass">
+            <svg class="h-7 w-7" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M14 34c0-6.5 3.6-11.5 10-11.5S34 27.5 34 34" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <ellipse cx="24" cy="35.2" rx="11" ry="3.4" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M24 10v14.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M17.5 16.5h13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+            <span class="font-serif text-lg tracking-[0.18em] uppercase text-cream">La Botica</span>
+          </a>
+          <nav class="hidden md:flex items-center gap-7 text-[11px] tracking-[0.2em] uppercase text-mist">
+            <a href="#casa" class="hover:text-brass transition-colors">La casa</a>
+            <a href="#mesa" class="hover:text-brass transition-colors">En la mesa</a>
+            <a href="#horario" class="hover:text-brass transition-colors">Horario</a>
+            <a href="#escribir" class="hover:text-brass transition-colors">Escribir</a>
+            <a href="tel:+34678940929" class="text-brass hover:text-cream transition-colors">Llamar</a>
+          </nav>
+          <button type="button" id="menu-btn" class="md:hidden text-[11px] tracking-[0.2em] uppercase text-cream" aria-expanded="false" aria-controls="menu-movil">Menú</button>
+        </div>
+        <div id="menu-movil" class="hidden md:hidden bg-ink border-b border-cream/10 px-4 py-5 flex flex-col gap-4 text-[13px] tracking-[0.18em] uppercase">
+          <a href="#casa" class="text-cream">La casa</a>
+          <a href="#mesa" class="text-cream">En la mesa</a>
+          <a href="#horario" class="text-cream">Horario</a>
+          <a href="#escribir" class="text-cream">Escribir</a>
+          <a href="tel:+34678940929" class="text-brass">678 94 09 29</a>
+        </div>
+      </header>
+      <main>
+        <section id="inicio" class="relative min-h-[100svh] grain">
+          <img src="./photos/fachada-noche.jpg" alt="Entrada de Bar La Botica de noche, con el letrero dorado sobre madera y una caña en la terraza" class="absolute inset-0 h-full w-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-ink/25"></div>
+          <div class="relative z-10 min-h-[100svh] flex flex-col justify-end px-4 pb-10 pt-28 md:px-10 md:pb-16">
+            <p class="rise text-[11px] tracking-[0.32em] uppercase text-brass">Bar de tapas · Ciudad Jardín</p>
+            <h1 class="rise rise-delay-1 mt-3 font-display text-[18vw] leading-[0.85] tracking-tight md:text-[9.5rem]">La Botica</h1>
+            <p class="rise rise-delay-2 mt-5 max-w-xl font-serif text-xl italic text-cream/90 md:text-2xl">Córdoba se sienta aquí: tapa con la caña, rock a volumen de conversación, y Marcos y Julia al otro lado de la madera.</p>
+            <div class="rise rise-delay-3 mt-8 flex flex-wrap gap-3">
+              <a href="#horario" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors duration-300 bg-brass text-ink hover:bg-brass-deep rounded-none px-6 py-3 text-[13px] tracking-[0.18em] uppercase h-12">Ver horario</a>
+              <a href="tel:+34678940929" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors duration-300 bg-transparent text-cream border border-cream/25 hover:border-brass hover:text-brass rounded-none px-6 py-3 text-[13px] tracking-[0.18em] uppercase h-12">678 94 09 29</a>
+            </div>
+            <p class="mt-8 text-[11px] tracking-[0.18em] uppercase text-mist">4,7 / 5 · unas 345 reseñas en Google</p>
+          </div>
+        </section>
+        <div class="overflow-hidden border-y border-brass/25 bg-ink-soft py-3">
+          <div class="marquee-track flex w-max gap-10 whitespace-nowrap px-6 text-[12px] tracking-[0.22em] uppercase text-brass">
+            <span>Tapa con la consumición · Más de 20 tapas · Morcilla con cebolla caramelizada · Caña de barril · Desayunos · Terraza · Rock que deja hablar · Ciudad Jardín · Tapa con la consumición · Más de 20 tapas · Morcilla con cebolla caramelizada · Caña de barril · Desayunos · Terraza · Rock que deja hablar · Ciudad Jardín ·</span>
+          </div>
+        </div>
+        <section id="casa" class="bg-cream text-ink">
+          <div class="grid md:grid-cols-12">
+            <div class="md:col-span-6 px-4 py-16 md:px-10 md:py-24">
+              <p class="text-[11px] tracking-[0.28em] uppercase text-wine">01 — La casa</p>
+              <h2 class="mt-4 font-display text-4xl leading-[1.05] md:text-6xl">Un bar de barrio<span class="italic text-wine">, no de escaparate.</span></h2>
+              <div class="mt-8 space-y-5 text-[17px] leading-7 text-ink/80 max-w-prose">
+                <p>En la calle del Alcalde Velasco Navarro, La Botica sostiene el tapeo de toda la vida: barra de madera, terraza cuando aprieta el calor, interior de bombilla y guitarra cuando refresca.</p>
+                <p>Marcos atiende. Julia cocina. Quien escribe las reseñas lo repite: el local se nota familiar, la caña sale cremosa y con la consumición hay tapa a elegir — más de veinte, según quien se para a contarlas.</p>
+                <p>El rollo es rock, pero a un volumen que deja hablar. Eso lo dicen los de casa, no un eslogan.</p>
+              </div>
+            </div>
+            <div class="md:col-span-6 relative min-h-[420px]">
+              <img src="./photos/salon.jpg" alt="Interior de Bar La Botica: mesas de madera, barrica, guitarra en la pared y luz cálida" class="h-full w-full object-cover" />
+            </div>
+          </div>
+        </section>
+        <section class="bg-ink">
+          <div class="grid md:grid-cols-2">
+            <div class="relative min-h-[380px] order-2 md:order-1">
+              <img src="./photos/barra.jpg" alt="Barra de La Botica con botellas, tirador de cerveza y lámparas de cobre" class="h-full w-full object-cover" />
+            </div>
+            <blockquote class="order-1 md:order-2 px-4 py-16 md:px-12 md:py-24 flex flex-col justify-center">
+              <p class="font-serif text-3xl italic leading-snug text-cream md:text-4xl">«Gran sitio donde parar y tomarte algo. Con la consumición una tapa a elegir entre más de 20… decoración y estilo rock underground, con una selección que no te impide poder hablar.»</p>
+              <footer class="mt-8 text-[12px] tracking-[0.2em] uppercase text-brass">Fran · febrero 2026</footer>
+            </blockquote>
+          </div>
+        </section>
+        <section id="mesa" class="bg-paper text-ink">
+          <div class="px-4 pt-16 md:px-10 md:pt-24">
+            <p class="text-[11px] tracking-[0.28em] uppercase text-wine">02 — En la mesa</p>
+            <h2 class="mt-4 max-w-3xl font-display text-4xl leading-[1.05] md:text-6xl">Lo que se pide de verdad</h2>
+            <p class="mt-5 max-w-2xl text-[17px] leading-7 text-ink/75">No inventamos una carta. Esto es lo que sale en reseñas públicas y en directorios: tapa con la bebida, desayunos, cerveza de barril y, si hay que elegir una, la morcilla con cebolla caramelizada.</p>
+          </div>
+          <div class="mt-10 grid grid-cols-12 gap-2 px-2 pb-4 md:gap-3 md:px-4">
+            <figure class="col-span-12 md:col-span-7">
+              <img src="./photos/tapas.jpg" alt="Ración de tapas en la terraza de La Botica, en un plato azul" class="h-[52vw] min-h-64 max-h-[560px] w-full object-cover" />
+              <figcaption class="px-2 py-3 text-[12px] tracking-[0.12em] uppercase text-ink/55">Terraza · tapas de la casa</figcaption>
+            </figure>
+            <figure class="col-span-12 md:col-span-5">
+              <img src="./photos/extra.jpg" alt="Copa y botella de cerveza Ambar en la terraza de La Botica" class="h-[52vw] min-h-64 max-h-[560px] w-full object-cover" />
+              <figcaption class="px-2 py-3 text-[12px] tracking-[0.12em] uppercase text-ink/55">Caña en la calle</figcaption>
+            </figure>
+            <figure class="col-span-6 md:col-span-5">
+              <img src="./photos/fachada.jpg" alt="Fachada de Bar La Botica con el logotipo de botica y el letrero La Botica" class="h-56 md:h-80 w-full object-cover" />
+              <figcaption class="px-2 py-3 text-[12px] tracking-[0.12em] uppercase text-ink/55">La puerta</figcaption>
+            </figure>
+            <figure class="col-span-6 md:col-span-7">
+              <img src="./photos/terraza-noche.jpg" alt="Terraza nocturna frente a la entrada iluminada de La Botica" class="h-56 md:h-80 w-full object-cover" />
+              <figcaption class="px-2 py-3 text-[12px] tracking-[0.12em] uppercase text-ink/55">De noche, en la terraza</figcaption>
+            </figure>
+          </div>
+          <ul class="mx-4 mb-16 mt-6 grid gap-px bg-ink/10 md:mx-10 md:grid-cols-3">
+            <li class="bg-paper px-5 py-8 md:px-8 border-t border-ink/10">
+              <p class="font-serif text-sm text-wine">01</p>
+              <h3 class="mt-2 font-display text-2xl">Tapa con la copa</h3>
+              <p class="mt-3 text-[15px] leading-6 text-ink/70">La eliges con la consumición. Si quieres otra aparte, en reseñas se habla de 1,50 €.</p>
+            </li>
+            <li class="bg-paper px-5 py-8 md:px-8 border-t border-ink/10">
+              <p class="font-serif text-sm text-wine">02</p>
+              <h3 class="mt-2 font-display text-2xl">La que más nombran</h3>
+              <p class="mt-3 text-[15px] leading-6 text-ink/70">Morcilla con cebolla caramelizada — Antonio Ramos, diciembre 2025.</p>
+            </li>
+            <li class="bg-paper px-5 py-8 md:px-8 border-t border-ink/10">
+              <p class="font-serif text-sm text-wine">03</p>
+              <h3 class="mt-2 font-display text-2xl">De día y de noche</h3>
+              <p class="mt-3 text-[15px] leading-6 text-ink/70">Desayunos, mediodía y barra hasta tarde. Domingo, cerrado.</p>
+            </li>
+          </ul>
+        </section>
+        <section id="horario" class="bg-ink text-cream">
+          <div class="grid md:grid-cols-12">
+            <div class="md:col-span-5 px-4 py-16 md:px-10 md:py-24">
+              <p class="text-[11px] tracking-[0.28em] uppercase text-brass">03 — La calle</p>
+              <h2 class="mt-4 font-display text-4xl md:text-5xl">Cómo llegar</h2>
+              <p class="mt-6 font-serif text-2xl italic text-cream/90">C. del Alcalde Velasco Navarro, 19<br />14004 Córdoba</p>
+              <p class="mt-4 text-mist text-[15px] leading-6">Ciudad Jardín, distrito Poniente Sur. Paradas de bus a un paso: Avda. Aeropuerto (Ministerios) y Glorieta Media Luna.</p>
+              <div class="mt-8 flex flex-wrap gap-3">
+                <a href="https://www.google.com/maps/place/Bar+La+Botica/@37.8797427,-4.7874265,17z/data=!4m2!3m1!1s0xd6d2128156b50a3:0x4cc502e52f961030" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors duration-300 bg-brass text-ink hover:bg-brass-deep rounded-none px-6 py-3 text-[13px] tracking-[0.18em] uppercase h-12">Abrir en Maps</a>
+                <a href="tel:+34678940929" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors duration-300 bg-transparent text-cream border border-cream/25 hover:border-brass hover:text-brass rounded-none px-6 py-3 text-[13px] tracking-[0.18em] uppercase h-12">Llamar</a>
+              </div>
+            </div>
+            <div class="md:col-span-7 px-4 pb-16 md:px-10 md:py-24">
+              <div class="border border-brass/30">
+                <div class="flex items-center justify-between border-b border-brass/30 px-5 py-4">
+                  <h3 class="font-serif text-2xl">Horario</h3>
+                  <p class="text-[10px] tracking-[0.16em] uppercase text-mist">Google · ago 2026</p>
+                </div>
+                <ul>
+                  <li class="flex items-baseline justify-between gap-4 border-b border-cream/10 px-5 py-3"><span class="text-[12px] tracking-[0.18em] uppercase text-mist">Lunes</span><span class="font-serif text-lg text-cream">20:00 – 1:00</span></li>
+                  <li class="flex items-baseline justify-between gap-4 border-b border-cream/10 px-5 py-3"><span class="text-[12px] tracking-[0.18em] uppercase text-mist">Martes</span><span class="font-serif text-lg text-cream">9:30 – 16:00 · 19:30 – 1:00</span></li>
+                  <li class="flex items-baseline justify-between gap-4 border-b border-cream/10 px-5 py-3"><span class="text-[12px] tracking-[0.18em] uppercase text-mist">Miércoles</span><span class="font-serif text-lg text-cream">9:30 – 16:00 · 19:30 – 1:00</span></li>
+                  <li class="flex items-baseline justify-between gap-4 border-b border-cream/10 px-5 py-3"><span class="text-[12px] tracking-[0.18em] uppercase text-mist">Jueves</span><span class="font-serif text-lg text-cream">9:30 – 16:00 · 19:30 – 1:00</span></li>
+                  <li class="flex items-baseline justify-between gap-4 border-b border-cream/10 px-5 py-3"><span class="text-[12px] tracking-[0.18em] uppercase text-mist">Viernes</span><span class="font-serif text-lg text-cream">9:30 – 16:00 · 19:30 – 1:00</span></li>
+                  <li class="flex items-baseline justify-between gap-4 border-b border-cream/10 px-5 py-3"><span class="text-[12px] tracking-[0.18em] uppercase text-mist">Sábado</span><span class="font-serif text-lg text-cream">11:30 – 16:00 · 19:30 – 1:00</span></li>
+                  <li class="flex items-baseline justify-between gap-4 px-5 py-3"><span class="text-[12px] tracking-[0.18em] uppercase text-mist">Domingo</span><span class="font-serif text-lg text-cream">Cerrado</span></li>
+                </ul>
+              </div>
+              <p class="mt-4 text-[12px] text-smoke">Horario según ficha de Google Business recopilada en directorios (agosto 2026). Confirma por teléfono si vienes de lejos.</p>
+            </div>
+          </div>
+        </section>
+        <section id="escribir" class="bg-wine text-cream">
+          <div class="grid md:grid-cols-12">
+            <div class="md:col-span-5 px-4 py-16 md:px-10 md:py-24">
+              <p class="text-[11px] tracking-[0.28em] uppercase text-brass">04 — Escribir</p>
+              <h2 class="mt-4 font-display text-4xl md:text-5xl">Si quieres avisar</h2>
+              <p class="mt-6 max-w-sm text-[16px] leading-7 text-cream/80">El camino más corto sigue siendo el teléfono. Este formulario es solo una vista previa: no envía nada a Marcos ni a Julia.</p>
+              <a href="tel:+34678940929" class="mt-8 inline-block font-serif text-3xl text-brass hover:text-cream transition-colors">678 94 09 29</a>
+            </div>
+            <div class="md:col-span-7 px-4 pb-16 md:px-10 md:py-20">
+              <div class="bg-cream text-ink p-6 md:p-10">
+                <form id="nota-form" class="space-y-7">
+                  <p class="font-serif text-2xl italic text-ink/70">Una nota para la barra</p>
+                  <div>
+                    <label class="block text-[11px] tracking-[0.22em] uppercase text-ink/55 mb-1" for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" autocomplete="name" required class="h-12 w-full bg-transparent border-0 border-b border-ink/25 px-0 text-[16px] text-ink placeholder:text-ink/40 outline-none transition-colors duration-300 focus:border-brass-deep" />
+                  </div>
+                  <div>
+                    <label class="block text-[11px] tracking-[0.22em] uppercase text-ink/55 mb-1" for="telefono">Teléfono</label>
+                    <input id="telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" required class="h-12 w-full bg-transparent border-0 border-b border-ink/25 px-0 text-[16px] text-ink placeholder:text-ink/40 outline-none transition-colors duration-300 focus:border-brass-deep" />
+                  </div>
+                  <div>
+                    <label class="block text-[11px] tracking-[0.22em] uppercase text-ink/55 mb-1" for="nota">Qué quieres decir</label>
+                    <textarea id="nota" name="nota" required class="min-h-28 w-full bg-transparent border-0 border-b border-ink/25 px-0 py-3 text-[16px] text-ink placeholder:text-ink/40 outline-none resize-y transition-colors duration-300 focus:border-brass-deep"></textarea>
+                  </div>
+                  <button type="submit" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors duration-300 bg-ink text-cream hover:bg-wine rounded-none px-6 py-3 text-[13px] tracking-[0.18em] uppercase h-12 w-full md:w-auto">Dejar la nota</button>
+                </form>
+                <div id="nota-ok" class="hidden min-h-64 flex flex-col justify-center">
+                  <p class="font-display text-3xl">Recibido en pantalla.</p>
+                  <p class="mt-4 text-[16px] leading-7 text-ink/70">En esta previa el mensaje no viaja. Si de verdad quieres hablar con el bar, llama al 678 94 09 29.</p>
+                  <button type="button" id="nota-reset" class="mt-8 self-start inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors duration-300 bg-ink text-cream hover:bg-wine rounded-none px-6 py-3 text-[13px] tracking-[0.18em] uppercase h-12">Escribir otro</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="bg-ink text-mist border-t border-cream/10 px-4 py-12 md:px-10">
+        <div class="flex flex-col gap-8 md:flex-row md:justify-between">
+          <div class="text-brass">
+            <svg class="h-10 w-10" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M14 34c0-6.5 3.6-11.5 10-11.5S34 27.5 34 34" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <ellipse cx="24" cy="35.2" rx="11" ry="3.4" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M24 10v14.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M17.5 16.5h13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+            <p class="mt-3 font-serif text-2xl tracking-[0.14em] uppercase text-cream">La Botica</p>
+            <p class="mt-1 text-[13px]">Bar de tapas · Córdoba</p>
+          </div>
+          <div class="text-[14px] leading-7">
+            <p>C. del Alcalde Velasco Navarro, 19</p>
+            <p>14004 Córdoba</p>
+            <p><a href="tel:+34678940929" class="text-brass">678 94 09 29</a></p>
+            <p class="mt-2">4,7 / 5 · ~345 reseñas en Google</p>
+          </div>
+          <p class="max-w-xs text-[12px] leading-5 text-smoke">Vista previa de sitio. No usa el dominio labotica.es. Fotos públicas del local (directorios / reseñas). Horario y dirección contrastados con Google Business vía directorios, agosto 2026.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="./assets/preview.js"></script>
   </body>
 </html>
