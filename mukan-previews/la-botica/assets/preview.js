@@ -1,4 +1,10 @@
 (function () {
+  var photoBase = "https://temporary-racing-crystal-tlmw9qx.vercel.app/photos/";
+  document.querySelectorAll("img[src]").forEach(function (img) {
+    var s = img.getAttribute("src") || "";
+    var m = s.match(/photos\/([^./]+)\.(?:jpg|svg)$/);
+    if (m) img.setAttribute("src", photoBase + m[1] + ".jpg");
+  });
   var btn = document.getElementById("menu-btn");
   var menu = document.getElementById("menu-movil");
   if (btn && menu) {
