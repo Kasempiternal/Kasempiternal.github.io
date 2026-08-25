@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 720" fill="none" role="img" aria-labelledby="tallerTitle tallerDesc">
+  <title id="tallerTitle">Ilustración original del taller en esquina de calle</title>
+  <desc id="tallerDesc">Dibujo gráfico de una nave de taller con puerta metálica, lámpara ámbar y placas de Calle Santa María y Fray Ceferino. No es una fotografía del local.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a343c"/><stop offset="1" stop-color="#14181c"/></linearGradient>
+    <linearGradient id="brick" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a3a32"/><stop offset="1" stop-color="#2c241e"/></linearGradient>
+    <linearGradient id="door" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6d7168"/><stop offset="0.5" stop-color="#3e413b"/><stop offset="1" stop-color="#23251f"/></linearGradient>
+    <radialGradient id="lamp" cx="0.5" cy="0.2" r="0.8"><stop offset="0" stop-color="#ffd56a" stop-opacity="0.55"/><stop offset="0.45" stop-color="#e8a317" stop-opacity="0.12"/><stop offset="1" stop-color="#e8a317" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="640" height="720" fill="url(#sky)"/>
+  <rect x="0" y="430" width="640" height="290" fill="#1a1814"/>
+  <g opacity="0.35"><path d="M0 430 L80 370 H560 L640 430 Z" fill="#2a2620"/></g>
+  <rect x="28" y="210" width="180" height="230" fill="#2b3034"/>
+  <rect x="48" y="236" width="48" height="64" fill="#1c2228"/>
+  <rect x="118" y="236" width="48" height="64" fill="#1c2228"/>
+  <rect x="48" y="318" width="48" height="64" fill="#1c2228"/>
+  <rect x="118" y="318" width="48" height="64" fill="#1c2228"/>
+  <rect x="40" y="208" width="156" height="8" fill="#c9a227"/>
+  <rect x="196" y="168" width="420" height="272" fill="url(#brick)"/>
+  <g opacity="0.25"><path d="M196 200 H616 M196 232 H616 M196 264 H616 M196 296 H616 M196 328 H616 M196 360 H616 M196 392 H616" stroke="#120e0c" stroke-width="2"/></g>
+  <rect x="196" y="156" width="420" height="18" fill="#1a1713"/>
+  <polygon points="196,156 406,96 616,156" fill="#2a241e"/>
+  <polygon points="196,156 406,96 616,156 616,168 196,168" fill="#3a322a"/>
+  <rect x="248" y="176" width="316" height="58" fill="#161410" stroke="#c9a227" stroke-width="2"/>
+  <text x="406" y="216" text-anchor="middle" fill="#f3efe6" font-family="Arial Black, Impact, sans-serif" font-size="36" letter-spacing="6">TAMESAN</text>
+  <text x="406" y="248" text-anchor="middle" fill="#c9a227" font-family="Arial, sans-serif" font-size="11" letter-spacing="3">TALLER MECÁNICO · GIJÓN</text>
+  <rect x="268" y="268" width="276" height="172" fill="url(#door)" stroke="#12110f" stroke-width="6"/>
+  <g stroke="#2a2c27" stroke-width="3"><path d="M271 292 H541 M271 316 H541 M271 340 H541 M271 364 H541 M271 388 H541 M271 412 H541"/></g>
+  <rect x="268" y="268" width="276" height="22" fill="#2f322c"/>
+  <circle cx="406" cy="410" r="8" fill="#c9a227"/>
+  <rect x="392" y="250" width="28" height="10" fill="#2a2a24"/>
+  <path d="M392 260 L386 272 H426 L420 260 Z" fill="#e8a317"/>
+  <ellipse cx="406" cy="390" rx="180" ry="90" fill="url(#lamp)"/>
+  <path d="M0 470 H640 L600 720 H40 Z" fill="#2c2c28"/>
+  <path d="M310 470 L300 720" stroke="#c9a227" stroke-width="6" stroke-dasharray="18 16" opacity="0.7"/>
+  <rect x="44" y="488" width="168" height="44" rx="2" fill="#f3efe6"/>
+  <text x="128" y="508" text-anchor="middle" fill="#161410" font-family="Arial, sans-serif" font-size="10" font-weight="700">CALLE</text>
+  <text x="128" y="524" text-anchor="middle" fill="#161410" font-family="Arial, sans-serif" font-size="13" font-weight="700">SANTA MARÍA</text>
+  <rect x="428" y="488" width="176" height="44" rx="2" fill="#1e4a8a"/>
+  <text x="516" y="508" text-anchor="middle" fill="#f3efe6" font-family="Arial, sans-serif" font-size="10" font-weight="700">ENTRADA POR</text>
+  <text x="516" y="524" text-anchor="middle" fill="#f3efe6" font-family="Arial, sans-serif" font-size="12" font-weight="700">FRAY CEFERINO</text>
+  <rect x="286" y="560" width="68" height="36" fill="#c9a227"/>
+  <text x="320" y="584" text-anchor="middle" fill="#161410" font-family="Arial Black, sans-serif" font-size="16">11</text>
+</svg>
