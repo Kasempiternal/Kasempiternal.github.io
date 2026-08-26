@@ -5,80 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex, nofollow" />
     <title>TAMESAN · Taller mecánico en Gijón</title>
-    <meta
-      name="description"
-      content="TAMESAN, Talleres Mecánicos Santiago. Taller mecánico en El Llano, Gijón. Mecánica general, frenos y diagnosis / pre-ITV."
-    />
-    <link rel="stylesheet" href="./styles.css?v=2" />
+    <meta name="description" content="TAMESAN, taller de Santi en El Llano, Gijón. Mecánica, frenos y diagnosis. Calle Santa María 11. 984 49 28 98." />
+    <link rel="stylesheet" href="./styles.css?v=3" />
   </head>
   <body>
-    <header class="hero">
-      <p class="brand">TAMESAN</p>
-      <h1>Taller mecánico en Gijón</h1>
-      <p class="line">El Llano</p>
-      <a class="btn btn-call" href="tel:+34984492898">Llamar 984 49 28 98</a>
-      <a
-        class="btn btn-map"
-        href="https://www.google.com/maps/search/?api=1&amp;query=TAMESAN+Talleres+Mecánicos+Santiago&amp;query_place_id=ChIJ9R_sHYt8Ng0R7fsijIQvaQk"
-        rel="noopener noreferrer"
-        >Cómo llegar</a
-      >
-    </header>
+    <section class="hero">
+      <img
+        class="hero-photo"
+        src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&amp;fit=crop&amp;w=1600&amp;q=80"
+        alt="Soldadura en el taller"
+        width="1600"
+        height="1067"
+      />
+      <header class="chrome">
+        <p class="mark">Tamesan</p>
+        <a class="call" href="tel:+34984492898">Llamar</a>
+      </header>
+      <div class="hero-copy">
+        <h1>Taller en Gijón</h1>
+        <p class="kicker">El Llano · Santi</p>
+      </div>
+    </section>
 
-    <main>
-      <section class="block chips" aria-label="Servicios">
-        <ul>
-          <li>Mecánica general</li>
-          <li>Frenos</li>
-          <li>Diagnosis / pre-ITV</li>
-        </ul>
-      </section>
+    <section class="band">
+      <p>
+        Mecánica de barrio en El Llano. Santi, en el mismo local.
+        Entrada por Fray Ceferino.
+      </p>
+    </section>
 
-      <section class="block hours">
-        <h2>Horario</h2>
-        <p>L-V 09:00–13:00 y 15:00–20:00</p>
-        <p>Sábado cerrado</p>
-        <p>Domingo cerrado</p>
-      </section>
+    <figure class="bleed">
+      <img
+        src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&amp;fit=crop&amp;w=1400&amp;q=80&amp;crop=entropy"
+        alt="Detalle: chispa y metal"
+        width="1400"
+        height="900"
+      />
+    </figure>
 
-      <section class="block place">
-        <h2>Dónde</h2>
-        <address>
-          Calle Santa María 11<br />
-          entrada por Fray Ceferino<br />
-          33208 Gijón
-        </address>
-        <p class="place-actions">
-          <a
-            class="btn btn-ghost"
-            href="https://www.google.com/maps/search/?api=1&amp;query=TAMESAN+Talleres+Mecánicos+Santiago&amp;query_place_id=ChIJ9R_sHYt8Ng0R7fsijIQvaQk"
-            rel="noopener noreferrer"
-            >Maps</a
-          >
-          <a class="btn btn-ghost" href="tel:+34984492898">Llamar</a>
-        </p>
-      </section>
+    <section class="band facts">
+      <p class="line">Mecánica · Frenos · Diagnosis</p>
+      <p class="hours">L–V 09:00–13:00 y 15:00–20:00</p>
+      <p class="hours">Sábado cerrado</p>
+      <p class="hours">Domingo cerrado</p>
+      <address>
+        Calle Santa María 11<br />
+        entrada por Fray Ceferino<br />
+        33208 Gijón
+      </address>
+      <p class="links">
+        <a href="tel:+34984492898">984 49 28 98</a>
+        <span class="pipe" aria-hidden="true">|</span>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=TAMESAN+Talleres+Mecánicos+Santiago&amp;query_place_id=ChIJ9R_sHYt8Ng0R7fsijIQvaQk" rel="noopener noreferrer">Cómo llegar</a>
+      </p>
+    </section>
 
-      <section class="block recado" id="recado">
-        <h2>Dejar recado</h2>
-        <form method="dialog" aria-describedby="form-aviso">
-          <label>
-            Nombre
-            <input type="text" name="nombre" autocomplete="name" />
-          </label>
-          <label>
-            Teléfono
-            <input type="tel" name="telefono" autocomplete="tel" inputmode="tel" />
-          </label>
-          <label>
-            Nota
-            <textarea name="nota" rows="2"></textarea>
-          </label>
-          <button type="button">Enviar recado</button>
-          <p id="form-aviso" class="aviso">Este formulario no envía datos.</p>
-        </form>
-      </section>
-    </main>
+    <section class="band recado">
+      <h2>Dejar recado</h2>
+      <form method="dialog">
+        <label>Nombre <input type="text" name="nombre" autocomplete="name" /></label>
+        <label>Teléfono <input type="tel" name="telefono" autocomplete="tel" inputmode="tel" /></label>
+        <label>Nota <textarea name="nota" rows="2"></textarea></label>
+        <button type="button">Enviar</button>
+        <p class="aviso">No envía nada. Mejor llama.</p>
+      </form>
+    </section>
 
     <footer class="foot">
       <p>Vista previa. No está publicada en tamesan.es.</p>
