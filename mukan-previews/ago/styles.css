@@ -23,7 +23,6 @@ body {
 }
 h1, h2, p, ul, address, form { margin: 0; }
 .first-screen {
-  min-height: 100svh;
   display: flex;
   flex-direction: column;
   background: var(--oil);
@@ -42,11 +41,9 @@ h1, h2, p, ul, address, form { margin: 0; }
   text-transform: uppercase;
 }
 .hero {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 1.5rem 1rem 2rem;
+  padding: 1.5rem 1rem 1.75rem;
 }
 h1 {
   font-size: 1.45rem;
@@ -118,7 +115,7 @@ input, textarea {
 }
 @media (min-width: 720px) {
   body { padding-bottom: 1rem; }
-  .first-screen { min-height: auto; }
+  .fab { display: none; }
   .hero { padding: 2.5rem 1.5rem; }
   h1 { font-size: 2.15rem; }
   .hero-actions { flex-direction: row; max-width: 32rem; }
