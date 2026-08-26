@@ -34,18 +34,13 @@ a {
 }
 
 .hero {
-  display: flex;
-  flex-direction: column;
   padding-top: 1.35rem;
-  padding-bottom: 1.75rem;
+  padding-bottom: 1.5rem;
   background: #161719;
   color: #efece4;
 }
 
 .brand {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
   margin: 0;
   font-size: 0.75rem;
   font-weight: 700;
@@ -54,17 +49,10 @@ a {
   color: #c5c0b6;
 }
 
-.brand::after {
-  content: "";
-  width: 2.75rem;
-  height: 1px;
-  background: #5e6670;
-}
-
 .hero h1 {
-  margin: 0.85rem 0 0;
+  margin: 0.7rem 0 0;
   max-width: 100%;
-  font-size: 1.875rem;
+  font-size: 1.65rem;
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.02em;
@@ -72,25 +60,18 @@ a {
 }
 
 .line {
-  margin: 0.55rem 0 0;
+  margin: 0.45rem 0 0;
   font-size: 16px;
   color: #b7b3ab;
 }
 
-.hero-ctas {
-  display: grid;
-  gap: 0.7rem;
-  margin-top: 1.35rem;
-  width: 100%;
-}
-
 .btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.55rem;
   width: 100%;
-  min-height: 3.75rem;
+  min-height: 3.25rem;
+  margin-top: 0.7rem;
   padding: 0.8rem 1rem;
   border: 1px solid transparent;
   border-radius: 0;
@@ -101,8 +82,8 @@ a {
   cursor: pointer;
 }
 
-.btn svg {
-  flex-shrink: 0;
+.hero .btn-call {
+  margin-top: 1rem;
 }
 
 .btn-call {
@@ -117,6 +98,7 @@ a {
 
 .btn-ghost {
   min-height: 3.25rem;
+  margin-top: 0;
   background: transparent;
   border-color: #5e6670;
   color: #1c1b19;
@@ -239,29 +221,12 @@ h2 {
 .foot {
   padding-top: 1rem;
   padding-bottom: 1.5rem;
-  padding-left: 5.25rem;
 }
 
 .foot p {
   margin: 0;
   font-size: 0.8125rem;
   color: #5e6670;
-}
-
-.fab {
-  position: fixed;
-  left: 1rem;
-  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 3.5rem;
-  height: 3.5rem;
-  border: 1px solid #8b929a;
-  border-radius: 50%;
-  background: #161719;
-  color: #efece4;
 }
 
 @media (min-width: 720px) {
@@ -276,21 +241,7 @@ h2 {
   }
 
   .hero {
-    min-height: auto;
-    margin-top: 0;
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-
-  .hero h1 {
-    font-size: 1.875rem;
-  }
-
-  .hero-ctas {
-    margin-top: 1.75rem;
-  }
-
-  .fab {
-    display: none;
   }
 }

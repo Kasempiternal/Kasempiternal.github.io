@@ -19,7 +19,6 @@ body {
   line-height: 1.45;
   color: var(--ink);
   background: var(--paper);
-  padding-bottom: 4.5rem;
 }
 h1, h2, p, ul, address, form { margin: 0; }
 .first-screen {
@@ -99,23 +98,7 @@ input, textarea {
   color: var(--muted);
   font-size: 0.92rem;
 }
-.fab {
-  position: fixed;
-  left: 1rem;
-  bottom: calc(1rem + env(safe-area-inset-bottom));
-  width: 56px; height: 56px;
-  border-radius: 50%;
-  background: var(--paper);
-  color: var(--oil);
-  display: flex; align-items: center; justify-content: center;
-  text-decoration: none;
-  font-size: 1.4rem;
-  box-shadow: 0 4px 16px #0006;
-  z-index: 20;
-}
 @media (min-width: 720px) {
-  body { padding-bottom: 1rem; }
-  .fab { display: none; }
   .hero { padding: 2.5rem 1.5rem; }
   h1 { font-size: 2.15rem; }
   .hero-actions { flex-direction: row; max-width: 32rem; }
