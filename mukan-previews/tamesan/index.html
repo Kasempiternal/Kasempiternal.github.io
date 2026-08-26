@@ -1,186 +1,108 @@
-<!doctype html>
-<html lang="es-ES">
+<!DOCTYPE html>
+<html lang="es">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex, nofollow" />
+    <title>TAMESAN · Taller mecánico en Gijón</title>
     <meta
       name="description"
-      content="Propuesta de sitio web para TAMESAN, Talleres Mecánicos Santiago: taller de barrio en Gijón. Mecánica general, frenos, diagnosis, pre-ITV y mantenimiento. Calle Santa María 11, entrada por Fray Ceferino."
+      content="TAMESAN, Talleres Mecánicos Santiago. Taller mecánico en El Llano, Gijón. Mecánica general, frenos y diagnosis / pre-ITV."
     />
-    <title>TAMESAN · Talleres Mecánicos Santiago · Gijón (propuesta de web)</title>
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <script type="module" crossorigin src="./assets/index-DLm_Iqns.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CvjvAKNM.css">
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <a class="skip" href="#contenido">Saltar al contenido</a>
-    <p class="preview-bar">Vista previa de propuesta web · no es el sitio oficial ni un dominio del taller</p>
-    <header class="site-header">
-      <div class="wrap header-inner">
-        <a class="brand" href="#inicio"><span class="brand-mark">TAMESAN</span><span class="brand-sub">Talleres Mecánicos Santiago</span></a>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
-        <nav id="menu" class="nav" aria-label="Principal">
-          <a href="#taller">El taller</a><a href="#servicios">Servicios</a><a href="#horario">Horario</a><a href="#donde">Dónde estamos</a><a href="#opiniones">Opiniones</a><a href="#cita">Pedir cita</a><a class="nav-call" href="tel:+34984492898">984 49 28 98</a>
-        </nav>
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="brand">TAMESAN</p>
+        <h1>Taller mecánico en Gijón</h1>
+        <p class="line">El Llano</p>
+      </div>
+      <div class="hero-ctas">
+        <a class="btn btn-call" href="tel:+34984492898">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+            <path
+              fill="currentColor"
+              d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"
+            />
+          </svg>
+          Llamar 984 49 28 98
+        </a>
+        <a
+          class="btn btn-map"
+          href="https://www.google.com/maps/search/?api=1&amp;query=TAMESAN+Talleres+Mecánicos+Santiago&amp;query_place_id=ChIJ9R_sHYt8Ng0R7fsijIQvaQk"
+          rel="noopener noreferrer"
+          >Cómo llegar</a
+        >
       </div>
     </header>
-    <main id="contenido">
-      <section id="inicio" class="hero">
-        <div class="wrap hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Taller mecánico · El Llano, Gijón</p>
-            <h1><span class="wordmark">TAMESAN</span><span class="lede">El taller de Santi, en Gijón</span></h1>
-            <p class="hero-text">Mecánica general, frenos, diagnosis, pre-ITV y mantenimiento. Un taller de barrio, no una cadena ni un concesionario. La entrada está por <strong>Fray Ceferino</strong> — Calle Santa María 11, 33208 Gijón.</p>
-            <div class="hero-actions">
-              <a class="btn btn-yellow" href="tel:+34984492898">Llamar 984 49 28 98</a>
-              <a class="btn btn-ghost" href="#cita">Pedir cita <span class="arrow" aria-hidden="true">↗</span></a>
-              <a class="btn btn-text" href="https://www.google.com/maps/search/?api=1&query=TAMESAN+Talleres+Mec%C3%A1nicos+Santiago&query_place_id=ChIJ9R_sHYt8Ng0R7fsijIQvaQk" target="_blank" rel="noopener noreferrer">Cómo llegar +</a>
-            </div>
-            <p class="hero-meta" id="estado-horario" data-hours>Lunes a viernes 09:00–13:00 y 15:00–20:00 · sábados y domingos cerrado</p>
-          </div>
-          <figure class="hero-art"><img src="./taller-esquina.svg" width="640" height="720" alt="Ilustración original de una nave de taller en esquina, con placas de Calle Santa María y entrada por Fray Ceferino. No es una fotografía del local." /></figure>
-        </div>
+
+    <main>
+      <section class="block chips" aria-label="Servicios">
+        <ul>
+          <li>Mecánica general</li>
+          <li>Frenos</li>
+          <li>Diagnosis / pre-ITV</li>
+        </ul>
       </section>
-      <section class="trust" aria-label="Datos públicos">
-        <div class="wrap trust-line">
-          <p><span class="mono">01</span> 4,9/5 en Google · más de 50 reseñas</p>
-          <p><span class="mono">02</span> Santa María 11 · entra por Fray Ceferino</p>
-          <p><span class="mono">03</span> L–V 09:00–13:00 y 15:00–20:00</p>
-          <p><span class="mono">04</span> Santi, el nombre que sale en las reseñas</p>
-        </div>
+
+      <section class="block hours">
+        <h2>Horario</h2>
+        <p>L-V 09:00–13:00 y 15:00–20:00</p>
+        <p>Sábado cerrado</p>
+        <p>Domingo cerrado</p>
       </section>
-      <section id="taller" class="section about">
-        <div class="wrap about-grid">
-          <div>
-            <p class="eyebrow">Quiénes somos</p>
-            <h2>Un taller de calle, con nombre y apellidos</h2>
-            <p><strong>TAMESAN</strong> es Talleres Mecánicos Santiago. Estamos en Gijón, en el cruce de Santa María con Fray Ceferino González, en El Llano: un barrio de talleres y de gente que trae el coche porque se lo ha dicho un vecino, no porque haya visto un anuncio de marca.</p>
-            <p>Quien lo lleva es <strong>Santi</strong>. Las reseñas públicas de Google hablan de él por el nombre de pila, del trato y de no mandarte a otro sitio si se puede resolver aquí. No inventamos plantilla, certificaciones ni “equipo de especialistas”: es un taller de barrio, y se nota.</p>
-            <p>La ficha pone <strong>Calle Santa María 11</strong>, 33208 Gijón. Si el GPS te deja en Santa María y no ves puerta de taller, no te quedes dando vueltas: <strong>la entrada es por Fray Ceferino</strong>.</p>
-          </div>
-          <aside class="plate" aria-label="Datos de contacto">
-            <p class="plate-kicker">Chapa del taller</p>
-            <p class="plate-name">TAMESAN</p>
-            <p class="plate-legal">Talleres Mecánicos Santiago</p>
-            <ul class="plate-list">
-              <li>Calle Santa María 11<br />entrada por Fray Ceferino<br />33208 Gijón, Asturias</li>
-              <li><a href="tel:+34984492898">984 49 28 98</a></li>
-              <li>Pago con tarjeta y móvil (NFC), según la ficha pública de Google</li>
-              <li>Cambio de aceite</li>
-            </ul>
-          </aside>
-        </div>
+
+      <section class="block place">
+        <h2>Dónde</h2>
+        <address>
+          Calle Santa María 11<br />
+          entrada por Fray Ceferino<br />
+          33208 Gijón
+        </address>
+        <p class="place-actions">
+          <a
+            class="btn btn-ghost"
+            href="https://www.google.com/maps/search/?api=1&amp;query=TAMESAN+Talleres+Mecánicos+Santiago&amp;query_place_id=ChIJ9R_sHYt8Ng0R7fsijIQvaQk"
+            rel="noopener noreferrer"
+            >Maps</a
+          >
+          <a class="btn btn-ghost" href="tel:+34984492898">Llamar</a>
+        </p>
       </section>
-      <section id="servicios" class="section services">
-        <div class="wrap">
-          <p class="eyebrow">Qué hacemos</p>
-          <h2>Mecánica de taller, no de escaparate</h2>
-          <p class="section-lead">Lo que pedimos y lo que sale en las fichas públicas. Si tu coche necesita otra cosa, llama y te decimos si lo vemos aquí.</p>
-          <ol class="service-list">
-            <li><span class="mono">01</span><div><h3>Mecánica general</h3><p>Averías, ruidos, fugas y lo que el coche traiga. Te lo miramos y te lo explicamos en castellano de taller, sin rodeos.</p></div></li>
-            <li><span class="mono">02</span><div><h3>Frenos</h3><p>Si chirría, vibra o el pedal se pone esponjoso, tráelo. Pastillas, discos y el tacto del freno, que es lo que te para el coche.</p></div></li>
-            <li><span class="mono">03</span><div><h3>Diagnosis</h3><p>Lectura de averías electrónicas para no cambiar piezas a ciegas. El testigo en el cuadro no se apaga a base de ignorarlo.</p></div></li>
-            <li><span class="mono">04</span><div><h3>Revisión pre-ITV</h3><p>Luces, frenos, emisiones y lo que suele tumbar en la estación, antes de que te toque la cita.</p></div></li>
-            <li><span class="mono">05</span><div><h3>Mantenimiento</h3><p>Aceite, filtros y revisiones periódicas. El trabajo feo y necesario, el que evita la avería del viernes a las siete.</p></div></li>
-          </ol>
-        </div>
-      </section>
-      <section id="horario" class="section hours">
-        <div class="wrap hours-grid">
-          <div>
-            <p class="eyebrow">Horario al público</p>
-            <h2>De lunes a viernes, mañana y tarde</h2>
-            <p class="section-lead">Cerrado sábados y domingos. El horario es el publicado en la ficha de Google: 09:00 a 13:00 y 15:00 a 20:00.</p>
-            <p class="now-pill" data-open-pill>Consultando horario de Gijón…</p>
-          </div>
-          <table class="hours-table">
-            <caption class="sr-only">Horario semanal</caption>
-            <thead><tr><th scope="col">Día</th><th scope="col">Mañana</th><th scope="col">Tarde</th></tr></thead>
-            <tbody>
-              <tr><th scope="row">Lunes</th><td>09:00–13:00</td><td>15:00–20:00</td></tr>
-              <tr><th scope="row">Martes</th><td>09:00–13:00</td><td>15:00–20:00</td></tr>
-              <tr><th scope="row">Miércoles</th><td>09:00–13:00</td><td>15:00–20:00</td></tr>
-              <tr><th scope="row">Jueves</th><td>09:00–13:00</td><td>15:00–20:00</td></tr>
-              <tr><th scope="row">Viernes</th><td>09:00–13:00</td><td>15:00–20:00</td></tr>
-              <tr class="closed-row"><th scope="row">Sábado</th><td colspan="2">Cerrado</td></tr>
-              <tr class="closed-row"><th scope="row">Domingo</th><td colspan="2">Cerrado</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-      <section id="donde" class="section location">
-        <div class="wrap location-grid">
-          <div>
-            <p class="eyebrow">Dónde estamos</p>
-            <h2>No te quedes en Santa María: entra por Fray Ceferino</h2>
-            <address class="addr">TAMESAN Talleres Mecánicos Santiago<br />Calle Santa María 11, entrada por Fray Ceferino<br />33208 Gijón, Asturias</address>
-            <p>Estamos en El Llano, a pie de calle. La razón social que figura en directorios mercantiles es Taller Mecánico Santiago SL, con el mismo teléfono y la misma dirección.</p>
-            <div class="location-actions">
-              <a class="btn btn-yellow" href="tel:+34984492898">Llamar al taller</a>
-              <a class="btn btn-text" href="https://www.google.com/maps/search/?api=1&query=TAMESAN+Talleres+Mec%C3%A1nicos+Santiago&query_place_id=ChIJ9R_sHYt8Ng0R7fsijIQvaQk" target="_blank" rel="noopener noreferrer">Abrir en Google Maps +</a>
-            </div>
-          </div>
-          <div class="map-frame">
-            <iframe title="Mapa de OpenStreetMap: Calle Santa María con Fray Ceferino, Gijón" src="https://www.openstreetmap.org/export/embed.html?bbox=-5.6678%2C43.5319%2C-5.6624%2C43.5346&amp;layer=mapnik&amp;marker=43.53323%2C-5.66507" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p class="map-note">Mapa de OpenStreetMap (orientativo). Para la ficha del taller usa <a href="https://www.google.com/maps/search/?api=1&query=TAMESAN+Talleres+Mec%C3%A1nicos+Santiago&query_place_id=ChIJ9R_sHYt8Ng0R7fsijIQvaQk" target="_blank" rel="noopener noreferrer">Google Maps</a>.</p>
-          </div>
-        </div>
-      </section>
-      <section id="opiniones" class="section reviews">
-        <div class="wrap">
-          <p class="eyebrow">Lo que dice la gente</p>
-          <h2>4,9 sobre 5 en Google</h2>
-          <p class="section-lead">Cifra pública, en torno a cincuenta reseñas. Abajo van tres opiniones reales publicadas en Google. No hay testimonios inventados.</p>
-          <ul class="quotes">
-            <li class="quote"><p>«Santi es un profesional como la copa de un pino, trato estupendo, profesionalidad absoluta y precio super asequible. Mi nuevo taller de confianza sin ninguna duda.»</p><footer><cite>Alfredo Sánchez Serrano</cite><span>Opinión pública en Google · 5/5</span></footer></li>
-            <li class="quote"><p>«Todo un profesional. Me habían dicho de llevarlo a la Toyota por una fuga de la junta de culata; detectó una fuga mínima y me revisó las fallas que tenía de la ITV por un precio módico… necesitamos más personas que sean profesionales como Santi.»</p><footer><cite>Manuel</cite><span>Opinión pública en Google · 5/5</span></footer></li>
-            <li class="quote"><p>«Muy profesionales. Recomendable.»</p><footer><cite>Salvador Puig Martínez</cite><span>Opinión pública en Google · 5/5</span></footer></li>
-          </ul>
-        </div>
-      </section>
-      <section id="cita" class="section contact">
-        <div class="wrap contact-grid">
-          <div>
-            <p class="eyebrow">Pedir cita</p>
-            <h2>Cuéntanos qué le pasa al coche</h2>
-            <p>Lo más rápido sigue siendo llamar al <a href="tel:+34984492898">984 49 28 98</a> en horario de taller. El formulario de esta propuesta es visual: no envía correo al taller ni a nadie.</p>
-          </div>
-          <form class="form" id="form-cita" novalidate>
-            <div class="field"><label for="nombre">Nombre</label><input id="nombre" name="nombre" type="text" autocomplete="name" required /></div>
-            <div class="field"><label for="telefono">Teléfono</label><input id="telefono" name="telefono" type="tel" inputmode="tel" autocomplete="tel" required /></div>
-            <div class="field"><label for="vehiculo">Vehículo <span class="opt">(opcional)</span></label><input id="vehiculo" name="vehiculo" type="text" placeholder="Marca, modelo o matrícula" autocomplete="off" /></div>
-            <div class="field"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" rows="5" required></textarea></div>
-            <p class="form-error" id="form-error" hidden></p>
-            <p class="form-ok" id="form-ok" hidden></p>
-            <button class="btn btn-ghost btn-submit" type="submit">Dejar el recado <span class="arrow" aria-hidden="true">↗</span></button>
-            <p class="form-note">Vista previa: al enviar no se transmite ningún dato. Si es urgente, llama.</p>
-          </form>
-        </div>
+
+      <section class="block recado" id="recado">
+        <h2>Dejar recado</h2>
+        <form method="dialog" aria-describedby="form-aviso">
+          <label>
+            Nombre
+            <input type="text" name="nombre" autocomplete="name" />
+          </label>
+          <label>
+            Teléfono
+            <input type="tel" name="telefono" autocomplete="tel" inputmode="tel" />
+          </label>
+          <label>
+            Nota
+            <textarea name="nota" rows="2"></textarea>
+          </label>
+          <button type="button">Enviar recado</button>
+          <p id="form-aviso" class="aviso">Este formulario no envía datos.</p>
+        </form>
       </section>
     </main>
-    <footer class="site-footer">
-      <div class="wrap footer-inner">
-        <div>
-          <p class="brand-mark">TAMESAN</p>
-          <p>Talleres Mecánicos Santiago · Gijón</p>
-          <p>Calle Santa María 11, entrada por Fray Ceferino, 33208 Gijón<br /><a href="tel:+34984492898">+34 984 49 28 98</a></p>
-        </div>
-        <div>
-          <p>Propuesta de sitio web de una sola página. No está publicada en tamesan.es ni en ningún dominio del negocio. El taller, a día de hoy, no tiene web propia.</p>
-        </div>
-      </div>
+
+    <footer class="foot">
+      <p>Vista previa. No está publicada en tamesan.es.</p>
     </footer>
-    <div class="mobile-cta" role="navigation" aria-label="Acciones rápidas">
-      <a href="tel:+34984492898">Llamar</a>
-      <a href="https://www.google.com/maps/search/?api=1&query=TAMESAN+Talleres+Mec%C3%A1nicos+Santiago&query_place_id=ChIJ9R_sHYt8Ng0R7fsijIQvaQk" target="_blank" rel="noopener noreferrer">Cómo llegar</a>
-      <a href="#cita">Cita</a>
-    </div>
+
+    <a class="fab" href="tel:+34984492898" aria-label="Llamar 984 49 28 98">
+      <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+        <path
+          fill="currentColor"
+          d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"
+        />
+      </svg>
+    </a>
   </body>
 </html>
